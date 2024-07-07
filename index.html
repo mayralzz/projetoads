@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Nails</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('main section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+        }
+
+        window.onload = () => {
+            showSection('capa');
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('capa')">INICIO</a></li>
+                <li><a href="#" onclick="showSection('servicos')">SERVIÇOS</a></li>
+                <li><a href="#" onclick="showSection('valores')">VALORES</a></li>
+                <li><a href="#" onclick="showSection('portfolio')">PORTIFÓLIO</a></li>
+                <li><a href="#" onclick="showSection('contato')">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="capa" style="display: none;">
+            <h1>Suzana</h1>
+            <h1>SOS Nails</h1>
+            <div class="logo">
+            
+                <img src="img/flor1.PNG" alt="Logo">
+            </div>
+            <div class="paragrafo">
+                <p>Resgatamos sua autoestima, porque a beleza não espera emergências</p>
+            </div>
+        </section>
+        <section id="servicos" style="display: none;">
+            <h1>SERVIÇOS</h1>
+            <div class="servicos">
+                <div class="servico">
+                    <img src="img/pé.PNG" alt="Depilação">
+                    <p>Depilação</p>
+                </div>
+                <div class="servico">
+                    <img src="img/unha.PNG" alt="Unhas">
+                    <p>Unhas</p>
+                </div>
+            </div>
+        </section>
+        <section id="valores" style="display: none;">
+            <h1>VALORES</h1>
+            <div class="valores">
+                <div class="valores-item">
+                    <h2>Unhas</h2>
+                    <ul>
+                        <li>Pé e mão - 60,00</li>
+                        <li>Pé - 30,00</li>
+                        <li>Mão - 30,00</li>
+                        <li>Esmaltação em gel - 80,00</li>
+                        <li>Blindagem - 60,00</li>
+                        <li>Banho de gel - 60,00</li>
+                        <li>Spa dos pés - 70,00</li>
+                        <li>Speed gel - 120,00</li>
+                    </ul>
+                </div>
+                <div class="valores-item">
+                    <h2>Depilação</h2>
+                    <ul>
+                        <li>Virilha completa - 70,00</li>
+                        <li>Virilha simples - 50,00</li>
+                        <li>Virilha cavada - 70,00</li>
+                        <li>Axilas - 25,00</li>
+                        <li>Perna inteira - 50,00</li>
+                        <li>Meia perna - 25,00</li>
+                        <li>Buço - 25,00</li>
+                        <li>Depilação facial completa - 50,00</li>
+                    </ul> </div>
+            </div>
+        </section>
+        <section id="portfolio" style="display: none;">
+            <h1>PORTIFÓLIO</h1>
+            <div class="portfolio">
+                <img src="img/unha1.png" alt ="Nail Art 1">
+                <img src="img/unha2.png" alt="Nail Art 2">
+                <img src="img/unha3.png" alt="Nail Art 3">
+            </div>
+        </section>
+        <section id="contato" style="display: none;">
+            <h1>CONTATO</h1>
+            <div class="contato">
+                <p>Instagram: <a href="https://instagram.com/suzanaunhasedepilacao" target="_blank">@suzanaunhasedepilacao</a></p>
+                <p>WhatsApp: <a href="tel:+5547997635119">47 99763-5119</a></p>
+                <p>Endereço: Rua Oscar Bernardo Beckenhauser, 1233</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
